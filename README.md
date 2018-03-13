@@ -1,1 +1,1 @@
-# Hangman-Game
+# Rock Papaer Scissors Game
