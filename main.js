@@ -13,12 +13,11 @@ $('#rock').click(function(){
     var computerRoll = Math.floor(Math.random()*3 +1);
 
     //draw case
-    if(computerRoll ===PlayerRoll){
+    if(computerRoll === PlayerRoll){
         gamesMessage.fadeOut(300, function(){
-            gamesMessage.append('<p class="game-draw">Draw</p>'+'<p class="computer-message">The Compueter chose rock too!</p>').fadeIn(300);
-
+            gamesMessage.html('').append('<p class="game-draw">'+'Draw'+'</p>'+'<p class="computer-message">The Compueter chose rock too!</p>').fadeIn(300);
             draws++;
-            $('#draws').append(draws);
+            $('#draws').html('').append(draws);
         });
         //rock vs paper
     } else if(PlayerRoll ===1 && computerRoll ===2){
